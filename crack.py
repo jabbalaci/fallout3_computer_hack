@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # encoding: utf-8
 
-from itertools import combinations
 import sys
+from itertools import combinations
 from pprint import pprint
 
 
