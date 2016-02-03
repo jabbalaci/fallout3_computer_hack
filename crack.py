@@ -3,7 +3,14 @@
 
 import sys
 from itertools import combinations
-from pprint import pprint
+from random import randint
+
+
+def header():
+    N = 80
+    print("ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM".center(N))
+    print("COPYRIGHT 2075-2077 ROBCO INDUSTRIES".center(N))
+    print("-Server {n}-".format(n=randint(1, 9)).center(N))
 
 
 def hamming(s1, s2):
@@ -65,9 +72,7 @@ def contains(tuples, word):
     return False
 
 
-def print_word_scores(words, d):
-    print("Words and scores:")
-    print("-----------------")
+def word_scores(words, d):
     result = []
     for word in words:
         cnt = 0
@@ -78,7 +83,7 @@ def print_word_scores(words, d):
     #
     result.sort(key=lambda t: t[1], reverse=True)
     for w, cnt in result:
-        print("{}  {}".format(w, cnt))
+        print("> {}  {}".format(w, cnt))
 
 
 def process(fname):
@@ -88,10 +93,9 @@ def process(fname):
 
     pairs = list(combinations(words, 2))
     d = classify(pairs)
-#    pprint(d)
-#    sep()
-    print_word_scores(words, d)
-#    sep()
+    header()
+    print()
+    word_scores(words, d)
     go_interactive(d)
 
 ##############################################################################
