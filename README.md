@@ -4,18 +4,20 @@ This script helps you to hack computers in Fallout 3.
 ## Example
 ```
 $ ./crack.py example.txt
-Words and scores:
------------------
-traveling  5
-swiveling  5
-wandering  4
-spreading  4
-desperate  3
-telephone  3
-sterilize  3
-deformity  3
-september  2
-belonging  2
+                   ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM                    
+                      COPYRIGHT 2075-2077 ROBCO INDUSTRIES                      
+                                   -Server 6-                                   
+
+> traveling  5
+> swiveling  5
+> wandering  4
+> spreading  4
+> desperate  3
+> telephone  3
+> sterilize  3
+> deformity  3
+> september  2
+> belonging  2
 
 Tip: it's a good idea to start with the word that has the highest score.
 
