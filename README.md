@@ -32,3 +32,4 @@ The password is:  deformity
 
 ## Links
 * [YouTube video: how to hack manually](https://www.youtube.com/watch?v=zBCYAEudCM8)
+* <http://hackfallout.analogbit.com/>, an online hacking tool
